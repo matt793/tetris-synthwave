@@ -400,17 +400,13 @@ Settings are automatically saved to your system's config directory:
 
 <div align="center">
 
-### Dark Theme
-![Dark Theme](assets/screenshot-dark.png)
-*Neon synthwave aesthetics with deep navy backgrounds*
+### 🌃 Dark Mode
+![Dark Mode](assets/Screenshots/DarkMode.png)
+*Experience the neon-soaked synthwave aesthetics with deep navy backgrounds and vibrant magenta/cyan accents*
 
-### Light Theme
-![Light Theme](assets/screenshot-light.png)
-*Soft pastels with muted neon accents*
-
-### Gameplay
-![Gameplay](assets/screenshot-gameplay.png)
-*Smooth 60 FPS action with visual effects*
+### ☀️ Light Mode
+![Light Mode](assets/Screenshots/LightMode.png)
+*Enjoy soft pastels with muted neon highlights for comfortable daytime gaming*
 
 </div>
 
@@ -484,6 +480,7 @@ in the Software without restriction...
 - 🎨 **egui Team** - For the fantastic immediate-mode GUI library
 - 🎮 **Alexey Pajitnov** - Creator of the original Tetris
 - 🌃 **Synthwave Artists** - For the aesthetic inspiration
+- 🤖 **Vibe Coded** - This project was developed with AI assistance, bringing modern development practices to classic gaming
 
 ### Technologies Used
 
