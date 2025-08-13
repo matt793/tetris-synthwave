@@ -1,0 +1,27 @@
+[package]
+name = "tetris-synthwave"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "A modern, minimal, synthwave-themed desktop Tetris in Rust with egui."
+readme = "README.md"
+
+[dependencies]
+eframe = { version = "0.29", features = ["wgpu"] }
+egui = "0.29"
+rand = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+directories = "5"
+anyhow = "1.0"
+once_cell = "1.19"
+image = "0.24"
+
+[package.metadata.wix]
+# Unique GUID for upgrades. Keep this constant across releases.
+upgrade-guid = "{F0B9E4B6-7E6E-4E8C-9A70-08E44B7D8D47}"
+# WiX configuration path (to be filled in later)
+path = "wix/main.wxs"
+license = "wix/LICENSE.rtf"
+eula = false
+product-icon = "assets/Icon/Icon.ico"
