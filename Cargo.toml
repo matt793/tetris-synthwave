@@ -1,6 +1,6 @@
 [package]
 name = "tetris-synthwave"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 description = "A modern, minimal, synthwave-themed desktop Tetris in Rust with egui."

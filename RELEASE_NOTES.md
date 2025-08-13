@@ -1,6 +1,28 @@
 # Release Information
 
-## Tag
+## Version 0.1.1 (Bug Fix Release)
+
+### Tag
+`v0.1.1`
+
+### Date
+January 12, 2025
+
+### Changes
+- **Fixed**: Piece randomization now uses a truly random seed instead of a fixed seed, ensuring different piece sequences each game
+- **Fixed**: Console window no longer appears when launching the game from the MSI installer on Windows
+- **Updated**: WiX configuration to use correct build output path
+
+### Technical Details
+- Modified `SevenBag::new()` in `src/game/random.rs` to generate random seeds using `thread_rng()`
+- Added `#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]` attribute to hide console in release builds
+- Corrected WiX source path from `target/x86_64-pc-windows-msvc/release/` to `target/release/`
+
+---
+
+## Version 0.1.0 (Initial Release)
+
+### Tag
 `v0.1.0`
 
 ## Title
