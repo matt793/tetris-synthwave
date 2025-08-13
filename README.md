@@ -31,11 +31,11 @@
 
 ### *A modern, minimal, synthwave-themed desktop Tetris game built in Rust*
 
-[![Version](https://img.shields.io/badge/version-0.1.0-ff69b4?style=for-the-badge&logo=github)](https://github.com/matt793/Tetris/releases)
+[![Version](https://img.shields.io/badge/version-0.1.0-ff69b4?style=for-the-badge&logo=github)](https://github.com/matt793/tetris-synthwave/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows-00a2ed?style=for-the-badge&logo=windows)](https://www.microsoft.com/windows)
 [![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=orange)](https://www.rust-lang.org/)
-[![GitHub Stars](https://img.shields.io/github/stars/matt793/Tetris?style=for-the-badge&logo=github)](https://github.com/matt793/Tetris/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/matt793/tetris-synthwave?style=for-the-badge&logo=github)](https://github.com/matt793/tetris-synthwave/stargazers)
 
 [**🎯 Features**](#-features) • [**⬇️ Download**](#-download) • [**🎮 How to Play**](#-how-to-play) • [**🚀 Quick Start**](#-quick-start) • [**📸 Screenshots**](#-screenshots) • [**🤝 Contributing**](#-contributing)
 
@@ -158,8 +158,8 @@ Special glowing blocks that trigger effects when cleared:
 
 | Architecture | Download | Size | SHA256 |
 |--------------|----------|------|--------|
-| **x64** (Most PCs) | [📥 tetris-synthwave-0.1.0-x86_64.msi](https://github.com/matt793/Tetris/releases/download/v0.1.0/tetris-synthwave-0.1.0-x86_64.msi) | 5.1 MB | `pending` |
-| **ARM64** (Surface Pro X) | [📥 tetris-synthwave-0.1.0-aarch64.msi](https://github.com/matt793/Tetris/releases/download/v0.1.0/tetris-synthwave-0.1.0-aarch64.msi) | 4.8 MB | `pending` |
+| **x64** (Most PCs) | [📥 tetris-synthwave-0.1.0-x86_64.msi](https://github.com/matt793/tetris-synthwave/releases/download/v0.1.0/tetris-synthwave-0.1.0-x86_64.msi) | 5.1 MB | `pending` |
+| **ARM64** (Surface Pro X) | [📥 tetris-synthwave-0.1.0-aarch64.msi](https://github.com/matt793/tetris-synthwave/releases/download/v0.1.0/tetris-synthwave-0.1.0-aarch64.msi) | 4.8 MB | `pending` |
 
 </div>
 
@@ -260,8 +260,8 @@ Special glowing blocks appear randomly (~5% chance) and grant powers when cleare
 
 ```bash
 # Clone the repository
-git clone https://github.com/matt793/Tetris.git
-cd Tetris
+git clone https://github.com/matt793/tetris-synthwave.git
+cd tetris-synthwave
 
 # Run the game (debug mode)
 cargo run
