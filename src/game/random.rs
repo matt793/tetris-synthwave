@@ -1,4 +1,4 @@
-use rand::{rngs::StdRng, seq::SliceRandom, SeedableRng};
+use rand::{rngs::StdRng, seq::SliceRandom, SeedableRng, thread_rng, Rng};
 
 use super::piece::Tetromino;
 
@@ -9,9 +9,16 @@ pub struct SevenBag {
 }
 
 impl SevenBag {
-    /// If `seed` is None, a default fixed seed is used to keep behavior deterministic for now.
+    /// If `seed` is None, a random seed is generated for true randomization.
     pub fn new(seed: Option<u64>) -> Self {
-        let rng = StdRng::seed_from_u64(seed.unwrap_or(0xC0FFEE_u64));
+        let rng = match seed {
+            Some(s) => StdRng::seed_from_u64(s),
+            None => {
+                // Generate a truly random seed
+                let random_seed = thread_rng().gen::<u64>();
+                StdRng::seed_from_u64(random_seed)
+            }
+        };
         let mut this = Self { rng, pool: Vec::with_capacity(7) };
         this.refill();
         this

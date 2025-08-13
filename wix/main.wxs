@@ -39,7 +39,7 @@
             <File Id='exe0' 
                   Name='tetris-synthwave.exe' 
                   DiskId='1' 
-                  Source='target/x86_64-pc-windows-msvc/release/tetris-synthwave.exe' 
+                  Source='target/release/tetris-synthwave.exe' 
                   KeyPath='yes' />
           </Component>
           

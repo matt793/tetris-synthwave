@@ -1,3 +1,6 @@
+// Hide the console window on Windows
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+
 mod ui;
 mod game;
 mod app;
