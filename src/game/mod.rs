@@ -29,6 +29,7 @@ pub struct Game {
     pub score: u64,
     pub level: u32,
     pub lines: u32,
+    pub game_over: bool,
 
     active: ActivePiece,
     bag: SevenBag,
@@ -51,6 +52,7 @@ impl Game {
             score: 0,
             level: 0,
             lines: 0,
+            game_over: false,
             active,
             bag,
             board,
@@ -132,12 +134,10 @@ impl Game {
             }
         }
         self.active = Self::spawn(&mut self.bag, &self.board);
-        // If spawn immediately collides, treat as simple "top out": reset board and continue.
+        // If spawn immediately collides, it's game over
         if self.board.collides(&self.active) {
-            self.board.clear();
-            self.score = 0;
-            self.level = 0;
-            self.lines = 0;
+            self.game_over = true;
+            println!("Game Over! Final Score: {}", self.score);
         }
         self.acc = 0.0;
     }
@@ -150,7 +150,7 @@ impl Game {
         if input.pause {
             self.paused = !self.paused;
         }
-        if self.paused {
+        if self.paused || self.game_over {
             return;
         }
 

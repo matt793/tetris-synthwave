@@ -31,7 +31,7 @@
 
 ### *A modern, minimal, synthwave-themed desktop Tetris game built in Rust*
 
-[![Version](https://img.shields.io/badge/version-0.1.1-ff69b4?style=for-the-badge&logo=github)](https://github.com/matt793/tetris-synthwave/releases)
+[![Version](https://img.shields.io/badge/version-0.2.0-ff69b4?style=for-the-badge&logo=github)](https://github.com/matt793/tetris-synthwave/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows-00a2ed?style=for-the-badge&logo=windows)](https://www.microsoft.com/windows)
 [![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=orange)](https://www.rust-lang.org/)
@@ -158,8 +158,8 @@ Special glowing blocks that trigger effects when cleared:
 
 | Architecture | Download | Size | SHA256 |
 |--------------|----------|------|--------|
-| **x64** (Most PCs) | [📥 tetris-synthwave-0.1.1-x86_64.msi](https://github.com/matt793/tetris-synthwave/releases/download/v0.1.1/tetris-synthwave-0.1.1-x86_64.msi) | 4.9 MB | `pending` |
-| **ARM64** (Surface Pro X) | [📥 tetris-synthwave-0.1.1-aarch64.msi](https://github.com/matt793/tetris-synthwave/releases/download/v0.1.1/tetris-synthwave-0.1.1-aarch64.msi) | 4.9 MB | `pending` |
+| **x64** (Most PCs) | [📥 tetris-synthwave-0.2.0-x86_64.msi](https://github.com/matt793/tetris-synthwave/releases/download/v0.2.0/tetris-synthwave-0.2.0-x86_64.msi) | 5.1 MB | `pending` |
+| **ARM64** (Surface Pro X) | [📥 tetris-synthwave-0.2.0-aarch64.msi](https://github.com/matt793/tetris-synthwave/releases/download/v0.2.0/tetris-synthwave-0.2.0-aarch64.msi) | 5.1 MB | `pending` |
 
 </div>
 
@@ -192,13 +192,24 @@ Special glowing blocks that trigger effects when cleared:
 | **X** | Rotate CW | Clockwise rotation |
 | **C** | Hold | Save piece for later |
 | **G** | Ghost Toggle | Show/hide ghost piece |
-| **M** | Mode Toggle | Switch gravity mode |
+| **M** | Music Toggle | Toggle music on/off |
 | **T** | Theme | Toggle light/dark theme |
 | **P** | Pause | Pause/resume game |
 | **R** | Restart | Start new game |
 | **Esc** | Quit | Exit to desktop |
 
 </div>
+
+### 🎵 Music & Audio
+
+**Tetris Synthwave** features a dynamic music system with randomized synthwave tracks:
+
+- **🎶 Randomized Playlist**: Each session plays tracks in a different order with no repeats until all songs have played
+- **🔇 Silent Gaps**: 4+ second breaks between tracks for a non-intrusive experience  
+- **🎚️ Volume Envelope**: Tracks fade in and out smoothly with configurable volume curves
+- **🎛️ Music Controls**: Toggle music with the 'M' key or adjust settings in-game
+- **📀 Track Display**: Current playing track is shown in the sidebar
+
 
 ### 💎 Power-Ups Guide
 
@@ -415,10 +426,10 @@ Settings are automatically saved to your system's config directory:
 ## 🗺️ Roadmap
 
 ### Version 0.2.0 (Q1 2025)
-- [ ] 🎵 Synthwave soundtrack
+- [x] 🎵 **Music Playback** - Randomized synthwave tracks with 4+ second gaps and volume envelope
 - [ ] 🎮 Online leaderboards
 - [ ] 🏆 Achievement system
-- [ ] 🎯 Challenge modes
+- [ ]  Challenge modes
 
 ### Version 0.3.0 (Q2 2025)
 - [ ] 🌐 Multiplayer support

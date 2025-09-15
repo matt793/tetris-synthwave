@@ -43,6 +43,26 @@
                   KeyPath='yes' />
           </Component>
           
+          <!-- Include assets directory -->
+          <Directory Id='AssetsDir' Name='assets'>
+            <Directory Id='SongsDir' Name='Songs'>
+              <Component Id='MusicFiles' Guid='*' Win64='yes'>
+                <File Id='Song1' 
+                      Name='Night Drive Reverie.mp3' 
+                      DiskId='1' 
+                      Source='assets/Songs/Night Drive Reverie.mp3' />
+                <File Id='Song2' 
+                      Name='Pulsing Shadows.mp3' 
+                      DiskId='1' 
+                      Source='assets/Songs/Pulsing Shadows.mp3' />
+                <File Id='Song3' 
+                      Name='Whispers from the Echoes.mp3' 
+                      DiskId='1' 
+                      Source='assets/Songs/Whispers from the Echoes.mp3' />
+              </Component>
+            </Directory>
+          </Directory>
+          
           <Component Id='ApplicationShortcut' Guid='*' Win64='yes'>
             <Shortcut Id='ApplicationStartMenuShortcut'
                       Name='Tetris Synthwave'
@@ -77,6 +97,7 @@
     <Feature Id='Binaries'>
       <ComponentRef Id='binary0' />
       <ComponentRef Id='ApplicationShortcut' />
+      <ComponentRef Id='MusicFiles' />
     </Feature>
 
     <WixVariable Id='WixUILicenseRtf' Value='wix/LICENSE.rtf' />

@@ -4,6 +4,7 @@
 mod ui;
 mod game;
 mod app;
+mod audio;
 
 use egui::IconData;
 
@@ -33,8 +34,8 @@ fn main() -> eframe::Result<()> {
 
     let native_options = eframe::NativeOptions {
         viewport: egui::ViewportBuilder::default()
-            .with_inner_size([900.0, 750.0])
-            .with_min_inner_size([800.0, 650.0])
+            .with_inner_size([900.0, 850.0])
+            .with_min_inner_size([800.0, 750.0])
             .with_title("Tetris Synthwave")
             .with_icon(icon),
         ..Default::default()

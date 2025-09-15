@@ -49,9 +49,6 @@ impl Board {
         }
     }
 
-    pub fn clear(&mut self) {
-        self.cells.fill(None);
-    }
 
     pub fn collides(&self, p: &ActivePiece) -> bool {
         for (ox, oy) in blocks(p.t, p.rot) {
